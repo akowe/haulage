@@ -1,0 +1,262 @@
+/* You can add global styles to this file, and also import other style files */
+/* Add here all your CSS customizations */
+
+:root {
+  --modified-orange: #f89521;
+  --modified-text-color: #707070;
+  --heading-text-color: #008bcc;
+  --brighter-blue: #008bcc;
+  --darker-heading-text-color: #000000;
+  --dashboard-bg: #ededed;
+  --dull-background: #EDEDED;
+  --modified-success: #58c790;
+  --bright-green: #17B164;
+  --another-blue: #2699FB;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../css/fonts/SF-Pro-Display-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../css/fonts/SF-Pro-Display-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../css/fonts/SF-Pro-Display-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cubano";
+  src: url("../css/fonts/Cubano.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../css/fonts/SF-Pro-Display-Medium.woff") format("woff");
+}
+
+* {
+  font-family: "SF Pro Display";
+}
+h1,
+h2 {
+  font-family: "Cubano";
+}
+
+/* Add here all your CSS customizations */
+.text-dark {
+  color: #2c272e !important;
+}
+.icon.platform {
+  content: url("../img/controls/platform.svg");
+}
+.icon.real-time {
+  content: url("../img/controls/real-time.svg");
+}
+.icon.h247 {
+  content: url("../img/controls/247.svg");
+}
+.icon.customer {
+  content: url("../img/controls/customer.svg");
+}
+.icon.verified {
+  content: url("../img/controls/verified.svg");
+}
+.icon.fast {
+  content: url("../img/controls/fast.svg");
+}
+.icon.login {
+  content: url("../img/controls/icon-login.svg");
+}
+.icon.arrow-right {
+  content: url("../img/controls/arrow-right.svg");
+}
+.icon.scroll {
+  content: url("../img/controls/scroll.svg");
+}
+.icon.next {
+  content: url("../img/controls/next-icon.svg");
+}
+#get-quote {
+  padding-top: 200px !important;
+}
+
+html .bg-blue {
+  background-color: #008bcc !important;
+}
+
+html,
+html .bg-orange {
+  background-color: #f89521 !important;
+  color: #ffffff;
+}
+html,
+html .bg-gray {
+  background-color: #ededed !important;
+}
+
+.dropdown-item {
+  padding: 0px !important;
+}
+.dropdown:hover .dropdown-toggle {
+  border-bottom: 1px solid #f89521;
+  color: #fff !important;
+}
+
+.footer div h5 {
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #fff;
+}
+.footer div p,
+.footer div p .footer-links {
+  font-size: 15px;
+  color: #707070  !important;
+}
+.sign {
+  padding-bottom: 40px !important;
+}
+
+.owl-dots {
+  text-align: left !important;
+  margin-left: 100px;
+}
+.owl-nav {
+  text-align: right !important;
+}
+.owl-carousel .owl-dots .owl-dot.active span,
+.owl-carousel .owl-dots .owl-dot:hover span {
+  background-color: #f89523 !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #ffffff;
+  border: 1px solid #f89523;
+}
+
+.owl-carousel .owl-nav button[class*="owl-"] {
+  background-color: unset;
+  border: none !important;
+  color: #fff;
+}
+.owl-carousel .owl-nav button.owl-prev:before {
+  content: url("../img/controls/arrow-left.svg") !important;
+}
+.owl-carousel .owl-nav button.owl-next:before {
+  content: url("../img/controls/arrow-right.svg") !important;
+}
+.owl-carousel .owl-nav button[class*="owl-"]:hover,
+.owl-carousel .owl-nav button[class*="owl-"],
+.owl-carousel .owl-nav button[class*="owl-"].hover,
+.owl-carousel .owl-nav button[class*="owl-"] {
+  background-color: unset !important;
+  border-color: unset !important;
+}
+
+@media (max-width: 991px) {
+  .d-sm-none {
+    display: none !important;
+  }
+  .d-lg-none {
+    display: block !important;
+  }
+
+  .footer div.col-md-6 {
+    margin-bottom: 40px !important;
+  }
+
+  .footer div h5.text-3.mb-3 {
+    font-size: 25px !important;
+  }
+
+  .footer div p {
+    font-size: 16px !important;
+    margin-bottom: 10px !important;
+  }
+  #section-concept {
+    background-image: none !important;
+  }
+
+  #header .header-logo {
+    text-align: center;
+  }
+  #header .header-logo img {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 0;
+    left: 45% !important;
+    /*width: 130% !important;*/
+  }
+  .sign span {
+    display: block !important;
+  }
+
+  html .bg-color-dark-scale-2 {
+    background-color: #1d75bc !important;
+    background-image: none !important;
+  }
+}
+
+/* styles for shippers html */
+.modified-input {
+  height: 70px !important;
+}
+
+.modified-input + button {
+  top: 31px;
+  right: 5%;
+  background-color: var(--brighter-blue);
+}
+
+.bg-orange {
+  border-radius: 10px;
+  padding: 70px;
+}
+
+@media only screen and (max-width: 500px) {
+  .bg-orange {
+    padding: 70px 10px;
+  }
+
+  .modified-input + button {
+    right: 8%;
+  }
+}
+
+.dashboard {
+  background: var(--dashboard-bg);
+  height: 100% !important;
+  width: 100%;
+}
+
+td {
+  color: #777777;
+}
+
+.small-text {
+  font-size: 0.6rem;
+}
+
+.more-padding {
+  padding: 2.3rem 5.5rem 2.3rem 5.5rem !important;
+}
+
+.colored-background{
+  background: var(--dull-background);
+}
